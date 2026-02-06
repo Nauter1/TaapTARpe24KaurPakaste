@@ -90,7 +90,7 @@ body {
     }
 }
 
-a[href="../index.html"] {
+a#tagasi {
     display: inline-block;
     margin: 2em auto;
     padding: 0.7em 1.6em;
@@ -104,8 +104,8 @@ a[href="../index.html"] {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-    a[href="../index.html"]:hover,
-    a[href="../index.html"]:focus {
+a#tagasi:hover,
+a#tagasi:focus {
         transform: translateY(-2px);
         box-shadow: 0 0 25px rgba(30, 144, 255, 0.9);
     }
