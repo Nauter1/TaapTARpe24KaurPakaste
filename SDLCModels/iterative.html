@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative ehk iteratiivne arendusmudel</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <a id="tagasi" href="../index.html">TAGASI</a><br/><br/>
+    <h1>Iteratiivne Arendusmudel</h1>
+    <p>
+        Iteratiivne arendusmudel on SDLC meetod, mille eesmärk on lahendada probleem mille tekitab<br/>
+        tavaline jäikmudel. Jäikmudeli (nagu Waterfall) rakendamisel ei saa muudatusi teha arenduse<br/>
+        teostamise ajal. Iteratiivsed arendusmudelid aga lubavad seda teha iga iteratsiooni vahel.<br/><br/>
+        Iteratiivne arendusmudel on ise ka tegelikult kombinatsioon Iteratiivsest endast ja<br/>
+        Inkrementaalmudelist, seda seetõttu, et ühe iteratsiooni ajal saab kas olemasolevat struktuuri<br/>
+        muuta (uus iteratsioon vanast) või lisada sellele midagi juurde (uus inkrement vanale).<br/>
+    </p><br/><br/>
+    <h2>Kus saab iteratiivset arendusmudelit kasutada?</h2>
+    <p>
+        Iteratiivne arendusmudel sobib näiteks juhul kui klient või lõppkasutaja vajab mõne funktsiooni<br/>
+        teistsugust toimimist või midagi uut juurde.<br/>
+        Näide: On olemas MMORPG kus mängija saab tappa koletisi, aga mängijad soovivad ka teisi<br/>
+        mängijaid tappa, Arendusmeeskond võtab kuulda, ning arendab juurde meetodid ja funktsioonid<br/>
+        koos muude multimeediavaradega selle mängijale võimalikuks muutmiseks.<br/>
+        Tulemuseks on see, et avatakse 1v1 areen<br/>
+        - Arendusmudel sobib ka sellistel juhtudel kus tingimused arenduseks on üheselt määratud<br/>
+        ning kõigile meeskonnaliikmetele selged ja üheselt arusaadavad.<br/>
+        - Iteratiivne arendusmudel sobib ka olukordades, kus on turu ja/või konkurentsisurve mingis<br/>
+        tootekategoorias. Võib olla kas siis uus arendus lastakse välja osalise funktsionaalsusega<br/>
+        või arendatakse vanale olemasolevale projektile uus osa juurde, samuti osalise funktsionaalsusega<br/>
+        - Saab kasutada arendusmudelit ka siis, kui projekt rakendab uudset metoodikat või tehnoloogiat<br/>
+        mingisuguse lahenduse arendamiseks, ning mille käigus meeskonnaliikmed paralleelselt ka õpivad<br/>
+        uut tööriista/metoodikat tundma.<br/>
+        - Või siis saab kasutada kui projekti eesmärk ajas muutub. Projekt algab ühe eesmärgiga, kuid<br/>
+        kasutajatestimine näitab hoopis mõne kõrvalise funktsionaalsuse kasulikumat olekut või kasutatakse<br/>
+        toodet eeldatust täielikult teistmoodi. Sellisel juhul saab arendusmeeskond suunata projekti ümber<br/>
+        kasutajate poolt ettenäidatud käitlemise suunas (arendus sihitakse sellele kuidas kasutaja kasutab<br/>
+        mitte kuidas arendajad seda ette nägid).<br/>
+    </p><br/><br/>
+    <h2>Etapid</h2>
+    <h3>Tasuv uuring</h3>
+    <p>
+        Teostatakse süsteemi tasuvusuuring, et näha kas ja kuidas arendustöö ennast ära tasub. Ning selle<br/>
+        põhjal otsustakse kuidas arendustöö läbi viiakse ja kas üldse läbi viiakse.
+    </p>
+    <h3>Süsteemi nüuded ja analüüs</h3>
+    <p>
+        Kaardistatakse ära mida klient tahab, mida lõppkasutaja tahab, mida selle programmiga üldse teha<br/>
+        saab. Mis on vaja selle süsteemi toimimiseks (infrastruktuur, riistvara, serverid, teised äpid jne.)<br/>
+        Iteratsiooni alguses kogutakse ka tagasisidet kliendilt ja kasutajatelt ning täpsustatakse ära uued<br/>
+        nõuded kas siis uue osa lisamiseks või vana osa uueks iteratsiooniks.
+    </p>
+    <h3>Arhitektuuri projekteerimine ja/või parandamine</h3>
+    <p>
+        Selles etapis töödatakse välja lahendus mis on vastavuses nõuetega, või ei ole, siis seda parandatakse<br/>
+        et ta nõuetega vastavusse viia. Et arhitektuur oleks kooskõlas nõuetest tulenevate<br/>
+        tingimustega.
+    </p>
+    <h3>Arendus/Kodeerimine</h3>
+    <p>
+        Toimub arendustöö programmeerimise näel et täita nõuded mis süsteemil vaja.
+    </p>
+    <h3>Testimine</h3>
+    <p>
+        Selles etapis kontrollitakse et eelnevas etapis arendatud töö toimiks nii, nagu seda nõuetes<br/>
+        sätestatud on.
+    </p>
+    <h3>Kasutuselevõtt/Integratsioon</h3>
+    <p>
+        See etapp toimub siis, kui testimine on tõestanud et programm töötab ning programm suudab käsitleda<br/>
+        ka mingis ulatuses ootamatusi. Kui programm ei ole valmis muu süsteemiga integreerimiseks,<br/>
+        korratakse eelmisi etappe niikaua kuni ta on. Kui programm on valmis siis toimub integratsioon<br/>
+        muu vajaliku süsteemiga. Näiteks: Linuxi distro versioon on valmis ja kasutajale pakutakse<br/>
+        versiooniuuendust. Installatsioon integreerib uue distro versiooni sinu raudvaraga
+    </p><br/><br/>
+    <h2>Tugevused ja puudujäägid</h2>
+    <br>
+    <table>
+        <th>
+            <tr>
+                <td>Tugevus</td>
+                <td>Puudujäägid</td>
+            </tr>
+        </th>
+        <tbody>
+            <tr>
+                <td>Paindlikkus mis tagab kiired tulemused. Iteratiivses arenduses
+                    saab jaotada kliendi poolt tulnud probleemi või nõude mitmeks
+                    väiksemaks osaks, ning need omakorda üksikuteks funktsioonideks.
+                    See aitab valmis saada mingisuguse versiooni tootest üsna kiiresti.
+                    Olenevalt projektist isegi tundidega või mõne päevaga. Selline
+                    tükeldamine lubab arendusmeeskonnal endale parajad probleemid ette seada.
+                </td>
+                <td>
+                    Projekti edasises arendusjärgus või hlises etapis võivad muudatused
+                    (olenevalt selle suurusest ja kontekstist) muutuda kulukaks. Näiteks
+                    leitakse üles struktuuris fundamentaalne viga, ning see algne arendustöö
+                    on nüüd mitme erineva teenuse või funktsioonikihi all. Muudatus siin
+                    tähendab muudatusi ka kõikides teistes süsteemides mis sellele tuginevad.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lihtne omaksvõtt ning kliendi rahulolu. Tänu pidevatele uuendustele, on
+                    iteratiivne arendus arendajaile mugav lubades võtta poolepealt juurde uusi
+                    nõudeid või soove kliendilt, tagades kliendile sobivama toote. Iteratiivses
+                    mudelis leitakse ka vead suhteliselt ruttu üles, ning nende parandamine
+                    tõhustab toote rakendamist ja omaksvõttu ka kasutajaile. Vigade parandus
+                    ise toimib ka jooksvalt.
+                </td>
+                <td>
+                    Kõrgem surve, et saada projektile kasutajaid, kes peavad siis toote kohta
+                    arendajaile tagasisidet andma. Kosemudelis saab kasutaja toote kätte alles
+                    arenduse lõpus, pärast mida muudatusi sisse viia ei ole võimalik. Kuna
+                    iteratiivses ei ole 100% nõudeid arendustöö alguses määratud, saadakse
+                    täiendavaid nõudeid lõppkasutajatelt arenduse ajal.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lihtne versioonihaldus. Iteratiivses arenduses on põhimõtteliselt iga uus
+                    väljalase uus versioon mis aitab ära hoida katkise süsteemi leviku. Näiteks:
+                    Lastakse välja FPS mängus patch mis rikub ära kasutaja hüppamisfüüsika (on lag)
+                    Arendusmeeskond saab reageerida sellele kiirelt, keerates live väljalaske vanale
+                    versioonile, parandab vead, ning siis laseb juba parandatud patchi uuesti välja.
+                </td>
+                <td>
+                    Eripäradade ja omaduste kasutajani jõudmine. Tihtipeale peavad kasutajad uusi
+                    funktsioone arendusmeeskonnalt ise küsima, või ootama kuni arendusjärk selle
+                    funktsioonini mis neil vaja on, jõuab. Uute versioonide puhul peavad kasutajad 
+                    harjuma ka uute kasutajaliideste eripäradega, või koguni täielikult uue kasutaja
+                    kasutajaliidesega. Uuega harjumine kasutajaile võtab aega ja tahtmist.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sobib organisatsioonidele mis rakendavad erinevaid agiilseid arendus
+                    metoodika praktikaid. Ta toimib väga hästi väiksemates agiilsetes rühmades
+                    kus vastutus on jaotatav meeskonnaliikmete vahel, ning mis võimaldab
+                    iteratsiooni läbida suhteliselt kergelt ning kiirelt. (Mugav arendajetele)
+                </td>
+                <td>--</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Arendusmudeli joonis:</h2>
+    <p>
+        <img src="../images/Iterative.png" alt="incremental picture">
+    </p>
+    <h2>ALLIKAD:</h2>
+    <p>
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html">EUCIP</a>
+    </p>
+</body>
+</html>
