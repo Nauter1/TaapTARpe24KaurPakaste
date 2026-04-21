@@ -8,35 +8,54 @@
 </head>
 <body>
     <a id="tagasi" href="../index.html">TAGASI</a><br/><br/>
-    <h1>UML</h1>
+    <h1>UML Index</h1>
+    <h2>Mis on UML?</h2>
     <p>
-        The Unified Modeling Language™ (UML®) is a standard visual modeling language intended to be used for
 
-        modeling business and similar processes,
-        analysis, design, and implementation of software-based systems
-    
-        UML is a common language for business analysts, software architects and developers used to describe, specify, design, and document existing or new business processes, structure and behavior of artifacts of software systems.
-        
-        UML can be applied to diverse application domains (e.g., banking, finance, internet, aerospace, healthcare, etc.) It can be used with all major object and component software development methods and for various implementation platforms (e.g., J2EE, .NET).
-        
-        UML is a standard modeling language, not a software development process. UML 1.4.2 Specification explained that process:
-        
-            provides guidance as to the order of a team’s activities,
-            specifies what artifacts should be developed,
-            directs the tasks of individual developers and the team as a whole, and
-            offers criteria for monitoring and measuring a project’s products and activities.
-        
-        UML is intentionally process independent and could be applied in the context of different processes. Still, it is most suitable for use case driven, iterative and incremental development processes. An example of such process is Rational Unified Process (RUP).
-        
-        UML is not complete and it is not completely visual. Given some UML diagram, we can't be sure to understand depicted part or behavior of the system from the diagram alone. Some information could be intentionally omitted from the diagram, some information represented on the diagram could have different interpretations, and some concepts of UML have no graphical notation at all, so there is no way to depict those on diagrams.
-        
-        For example, semantics of multiplicity of actors and multiplicity of use cases on use case diagrams is not defined precisely in the UML specification and could mean either concurrent or successive usage of use cases.
-        
-        Name of an abstract classifier is shown in italics while final classifier has no specific graphical notation, so there is no way to determine whether classifier is final or not from the diagram. 
+    </p>
+    <h2>Navigatsioon</h2>
+    <ul>
+        <li><a href="SDLCModels/Waterfall.html">ERD</a></li>
+        <li><a href="SDLCModels/Incremental.html">Flowchart</a></li>
+    </ul>
+    <h2>Use case</h2>
+    <p>
+        <img src="/images/usecase.png" alt="picture" />
+    </p>
+    <h2>Class diagram</h2>
+    <p>
+        <img src="/images/classdiagram.png" alt="picture" />
+    </p>
+    <h2>Sequence diagram</h2>
+    <p>
+        <img src="/images/sequence.png" alt="picture" />
+    </p>
+    <h2>Olekumasin</h2>
+    <p>
+        Olekumasin on diagramm, mis määrab kindlaks objekti eluea jooksul sündmustele reageerides läbitavate olekute järjestused koos nendele sündmustele reageerivate teguritega.<br/>
+
+<strong>Olek</strong> on objekti eluea jooksul esinev seisund või olukord, mille jooksul see täidab mingit tingimust, sooritab mingit tegevust või ootab mingit sündmust.<br/>
+
+<strong>Sündmus</strong> on olulise sündmuse kirjeldus, millel on ajas ja ruumis kindel asukoht. Olekumasinade kontekstis on sündmus stiimuli esinemine, mis võib käivitada oleku ülemineku.<br/>
+
+<strong>Kaitsetingimust</strong> hinnatakse pärast ülemineku käivitava sündmuse toimumist. Samast lähteolekust ja sama sündmuse käivitajaga võib olla mitu üleminekut, kui kaitsetingimused ei kattu. Kaitsetingimust hinnatakse ülemineku jaoks ainult üks kord sündmuse toimumise ajal. Tõeline avaldis võib viidata objekti olekule.<br/>
+
+<strong>Üleminek</strong> on kahe oleku vaheline seos, mis näitab, et esimeses olekus olev objekt sooritab teatud toiminguid ja siseneb teise olekusse, kui toimub määratud sündmus ja määratud tingimused on täidetud. Tegevus on pidev mitteaatomiline teostus olekumasinas.<br/>
+
+<strong>Toiming</strong> on käivitatav aatomiarvutus, mille tulemuseks on mudeli oleku muutus või väärtuse tagastamine.<br/>
+
+<strong>Graafiliselt</strong> kuvatakse olekut ümarate nurkadega ristkülikuna. Üleminekut kuvatakse suunatud pideva joonena.<br/>
+
+
+        <img src="/images/state.png" alt="picture" />
+    </p>
+    <h2>Ise-valitud Skeemitüüp</h2>
+    <p>
+        <img src="/images/usecase.png" alt="picture" />
     </p>
     <h2>ALLIKAD:</h2>
     <p>
-        <!--<a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1223_spiraalmudel.html">EUCIP</a>-->
+        <a href="https://www.uml-diagrams.org/">UML-Diagrams</a>
     </p>
     </body>
 </html>
