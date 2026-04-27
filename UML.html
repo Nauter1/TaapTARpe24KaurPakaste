@@ -11,7 +11,8 @@
     <h1>UML Index</h1>
     <h2>Mis on UML?</h2>
     <p>
-
+    UML on lühend Unified Modelling Language jaoks ning on standardne visuaalne modelleerimiskeel, mida kasutatakse tarkvarasüsteemide kirjeldamiseks, kavandamiseks ja dokumenteerimiseks. UML aitab arendajatel ja analüütikutel paremini mõista süsteemi struktuuri ja käitumist, kasutades erinevaid diagramme.<br/><br/>
+    UML pole programmerimiseks. Seda kasutatakse näiteks süsteemide planeerimisel, suhtluses meeskonna vahel ning keerukate protsesside lihtsustamisel.
     </p>
     <h2>Navigatsioon</h2>
     <ul>
@@ -20,14 +21,30 @@
     </ul>
     <h2>Use case</h2>
     <p>
+    Use case diagramm kirjeldab süsteemi funktsionaalsust kasutaja vaatenurgast. See näitab, millised kasutajad (aktorid) suhtlevad süsteemiga ja milliseid tegevusi nad saavad teha.<br/><br/>
+    <strong>Elemendid:</strong><br/>
+    - Aktor (Actor): süsteemi väline kasutaja või muu süsteem (kujutatakse Ristkülikuna).<br/>
+    - Use case: tegevus või funktsioon (ovaal).<br/>
+    - Seosed (Associations): jooned aktorite ja use case'ide vahel.<br/><br/>
         <img src="/images/usecase.png" alt="picture" />
     </p>
     <h2>Class diagram</h2>
     <p>
+    Class diagramm kujutab süsteemi struktuuri, näidates klasse, nende omadusi ja meetodeid ning seoseid klasside vahel.<br/><br/>
+    <strong>Elemendid:</strong><br/>
+    - Klass (Class): ristkülik, mis on jaotatud kolmeks osaks (nimi, atribuudid, meetodid).<br/>
+    - Seosed (Associations): jooned klasside vahel (nt pärilus, assotsiatsioon).<br/>
+    - Pärilus: noolega joon, mis näitab klasside hierarhiat.<br/><br/>
+
         <img src="/images/classdiagram.png" alt="picture" />
     </p>
     <h2>Sequence diagram</h2>
     <p>
+    Sequence diagramm näitab, kuidas objektid omavahel ajas suhtlevad. See keskendub sõnumite järjekorrale ja protsesside kulgemisele.<br/><br/>
+    <strong>Elemendid:</strong><br/>
+    - Objektid (Object): kuvatakse ülaosas kastidena.<br/>
+    - Elujooned (Lifelines): vertikaalsed jooned, mis näitavad objekti eluiga.<br/>
+    - Sõnumid (Messages): nooled objektide vahel.<br/><br/>
         <img src="/images/sequence.png" alt="picture" />
     </p>
     <h2>Olekumasin</h2>
@@ -49,9 +66,19 @@
 
         <img src="/images/state.png" alt="picture" />
     </p>
-    <h2>Ise-valitud Skeemitüüp</h2>
+    <h2>Ise-valitud Skeemitüüp (Composite)</h2>
     <p>
-        <img src="/images/usecase.png" alt="picture" />
+    Composite Structure Diagram kirjeldab klassi või komponendi sisemist struktuuri ja seda, kuidas selle osad omavahel suhtlevad. Seda kasutatakse keerukamate süsteemide ülesehituse näitamiseks.<br/><br/>
+
+    <strong>Elemendid:</strong><br/>
+    - Struktuur: suur ristkülik, mis esindab tervikut (nt klass või komponent).<br/>
+    - Osad (parts): väiksemad elemendid struktuuri sees.<br/>
+    - Pordid: ühenduspunktid, mille kaudu elemendid suhtlevad.<br/>
+    - Ühendused (connectors): jooned, mis näitavad suhtlust osade vahel.<br/><br/>
+
+    Diagramm aitab mõista, kuidas süsteemi erinevad osad koos töötavad ja kuidas andmevahetus toimub.<br/>
+   
+        <img src="/images/composite.png" alt="picture" />
     </p>
     <h2>ALLIKAD:</h2>
     <p>
